@@ -66,6 +66,16 @@ header{
   color: white;
   border-bottom: 2px solid black;
 }
+.title-header{
+  font-size: 33px;
+  font-weight: 600;
+}
+
+.title-page{
+  color: white;
+  font-weight: 600;
+}
+
 .header__wrapper{
   height: 110px;
   display: flex;
@@ -195,6 +205,7 @@ footer{
 .footer__wrapper{
   height: 110px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 60px;
   font-size: 25px;

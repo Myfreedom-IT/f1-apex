@@ -74,10 +74,14 @@ main {
 
 header {
   background-color: #797979;
+  
   color: white;
     background-color: rgb(205, 34, 34);
 }
-
+.title-header{
+  font-size: 33px;
+  font-weight: 600;
+}
 .h1-main {
   font-size: 32px;
   font-weight: 600;
