@@ -1,23 +1,23 @@
-*{
+* {
   font-family: Arial, sans-serif;
   margin: 0;
   box-sizing: border-box;
 }
 
-a{
+a {
   text-decoration: none;
   color: white;
 }
 
 .custom-emoji {
-    font-family: "MyEmojiFont";
+  font-family: "MyEmojiFont";
 }
 
-body{
+body {
   background-color: rgb(205, 34, 34);
 }
 
-.wrapper{
+.wrapper {
   margin: 0 auto;
   max-width: 1360px;
   @media (max-width: 1450px) {
@@ -25,7 +25,7 @@ body{
   }
 }
 
-.burger__btn{
+.burger__btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,21 +33,21 @@ body{
   background-color: rgba(0, 0, 0, 0.212);
   backdrop-filter: blur(20px);
   border-radius: 10px;
-  position:fixed;
+  position: fixed;
   right: 30px;
   top: 30px;
-  img{
+  img {
     height: 50px;
   }
   @media (min-width: 900px) {
     display: none;
   }
 }
-.open__btn{
+.open__btn {
   z-index: 99;
 }
 
-.burger__menu{
+.burger__menu {
   position: fixed;
   background-color: rgb(205, 34, 34);
   height: 100vh;
@@ -64,19 +64,24 @@ body{
   transition: transform 0.3s ease-in-out;
 }
 
-.open{
+.open {
   transform: translateX(0vw);
 }
 
-header{
+header {
   background-color: rgb(205, 34, 34);
   color: white;
   border-bottom: 2px solid black;
-  a{
+  a {
     color: white;
   }
 }
-.header__wrapper{
+.title-header{
+  font-size: 33px;
+  font-weight: 600;
+}
+
+.header__wrapper {
   height: 110px;
   display: flex;
   justify-content: space-between;
@@ -89,7 +94,7 @@ header{
     margin: 0;
   }
 }
-.header__box{
+.header__box {
   display: flex;
   justify-content: space-between;
   font-size: 25px;
@@ -99,51 +104,51 @@ header{
   }
 }
 
-main{
-  background-color: #D0D0D0;
+main {
+  background-color: #d0d0d0;
 }
-.clock{
+.clock {
   border-bottom: 2px solid black;
 }
-.clock__block{
+.clock__block {
   height: 110px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 25px;
 }
-.clock__time{
+.clock__time {
   font-weight: 700;
 }
 
-.main{
+.main {
   padding: 100px 0 100px 0;
   @media (max-width: 900px) {
     padding: 50px 0 50px 0;
   }
 }
-.main__wrapper{
+.main__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  gap:20px;
+  gap: 20px;
   @media (max-width: 900px) {
-    flex-direction:column;
+    flex-direction: column;
   }
 }
-.left__block{
+.left__block {
   display: flex;
-  flex-direction:column;
-  gap:20px;
+  flex-direction: column;
+  gap: 20px;
   width: 50%;
-  h2{
+  h2 {
     text-align: center;
   }
   @media (max-width: 900px) {
     width: 100%;
   }
 }
-.main__block{
+.main__block {
   background: white;
   border: solid 2px black;
   border-radius: 5px;
@@ -151,29 +156,36 @@ main{
   display: flex;
   flex-direction: column;
   gap: 20px;
-  p{
+  p {
     font-size: 20px;
     line-height: 26px;
   }
 }
-.right__block .main__block{
+.right__block .main__block {
   height: 100%;
 }
 
-footer{
+.video{
+  font-weight: 600;
+  padding-top: 10%;
+  padding-left: 12%;
+}
+
+footer {
   border-top: 2px solid black;
   background-color: rgb(205, 34, 34);
   color: white;
 }
-.footer__wrapper{
+.footer__wrapper {
   height: 110px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 60px;
   font-size: 25px;
   @media (max-width: 900px) {
     height: auto;
-    flex-direction:column;
+    flex-direction: column;
     gap: 30px;
     padding: 40px;
   }
@@ -195,50 +207,58 @@ footer{
   background-color: black;
   border-radius: 10px;
 }
-.hour { width: 4px; height: 30%; }
-.minute { width: 4px; height: 40%; }
+.hour {
+  width: 4px;
+  height: 30%;
+}
+.minute {
+  width: 4px;
+  height: 40%;
+}
 .center-dot {
   position: absolute;
-  width: 5px; height: 5px;
+  width: 5px;
+  height: 5px;
   background-color: black;
   border-radius: 50%;
-  top: 50%; left: 50%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.pilots{
+.pilots {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   width: 100%;
 }
-.driver-card{
+.driver-card {
   background-color: rgb(205, 34, 34);
   color: white;
   padding: 10px;
   border-radius: 5px;
   transition: all 0.3s ease-in-out;
-  button{
+  button {
     margin-top: 5px;
     border: none;
     padding: 5px 10px;
     border-radius: 5px;
   }
-  a{
+  a {
     color: black;
   }
 }
-.driver-card:hover{
+.driver-card:hover {
   transform: scale(1.15);
   box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.215);
-  a{
+  a {
     color: black;
   }
 }
 
-.image__block{
+.image__block {
   @media (max-width: 900px) {
-    iframe{
+    iframe {
       width: 100%;
     }
   }
