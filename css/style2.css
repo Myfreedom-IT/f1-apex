@@ -34,7 +34,7 @@ main {
   justify-content: center;
   align-items: center;
   padding: 5px;
-    background-color: rgb(205, 34, 34);
+    background-color: rgba(0, 0, 0, 0.212);
   backdrop-filter: blur(20px);
   border-radius: 10px;
   position: fixed;
@@ -260,6 +260,12 @@ button {
 @media(max-width: 1000px){
   .logo{
     display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .header__wrapper{
+    justify-content: center;
   }
 }
 

@@ -25,7 +25,7 @@ body {
   }
 }
 
-.burger__btn {
+.burger__btn{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,21 +33,23 @@ body {
   background-color: rgba(0, 0, 0, 0.212);
   backdrop-filter: blur(20px);
   border-radius: 10px;
-  position: fixed;
+  position:fixed;
   right: 30px;
   top: 30px;
-  img {
+  img{
     height: 50px;
   }
-  @media (min-width: 900px) {
-    display: none;
+  display: none;
+  @media (max-width: 900px){
+    display: flex;
   }
 }
-.open__btn {
+
+.open__btn{
   z-index: 99;
 }
 
-.burger__menu {
+.burger__menu{
   position: fixed;
   background-color: rgb(205, 34, 34);
   height: 100vh;
